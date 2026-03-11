@@ -1,0 +1,815 @@
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>APEX FITNESS | Elite Performance Training</title>
+  <meta name="description" content="APEX FITNESS — Where champions are made. Premium gym memberships, elite trainers, and transformation programs.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=DM+Sans:ital,wght@0,300;0,400;0,500;0,700;1,300&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- NAV -->
+<nav id="mainNav">
+  <div class="nav-logo">APEX<span>FIT</span></div>
+  <ul class="nav-links">
+    <li><a href="#why">About</a></li>
+    <li><a href="#programs">Programs</a></li>
+    <li><a href="#trainers">Trainers</a></li>
+    <li><a href="#schedule">Schedule</a></li>
+    <li><a href="#membership">Pricing</a></li>
+    <li><a href="#blog">Blog</a></li>
+    <li><a href="#contact">Contact</a></li>
+  </ul>
+  <button class="nav-cta" onclick="scrollTo('#membership')">Join Now</button>
+  <div class="hamburger" id="hamburger" onclick="toggleMenu()">
+    <span></span>
+    <span></span>
+    <span></span>
+  </div>
+</nav>
+
+<!-- MOBILE MENU -->
+<div class="mobile-menu" id="mobileMenu">
+  <a href="#why" onclick="toggleMenu()">About</a>
+  <a href="#programs" onclick="toggleMenu()">Programs</a>
+  <a href="#trainers" onclick="toggleMenu()">Trainers</a>
+  <a href="#schedule" onclick="toggleMenu()">Schedule</a>
+  <a href="#membership" onclick="toggleMenu()">Pricing</a>
+  <a href="#contact" onclick="toggleMenu()">Contact</a>
+</div>
+
+<!-- HERO -->
+<section id="hero">
+  <div class="hero-bg"></div>
+  <div class="hero-content">
+    <div class="hero-tag">Est. 2015 — Elite Performance</div>
+    <h1 class="hero-h1">
+      FORGE<br>
+      <span class="line2">YOUR</span><br>
+      <span class="outline">LIMIT</span>
+    </h1>
+    <p class="hero-sub">World-class training facilities, elite coaches, and a community that pushes you beyond what you thought possible.</p>
+    <div class="hero-actions">
+      <a href="#membership" class="btn-primary">Start Free Trial</a>
+      <a href="#programs" class="btn-outline">Explore Programs</a>
+    </div>
+  </div>
+  <div class="hero-stats">
+    <div class="stat">
+      <div class="stat-num">12K+</div>
+      <div class="stat-label">Active Members</div>
+    </div>
+    <div class="stat">
+      <div class="stat-num">48</div>
+      <div class="stat-label">Elite Trainers</div>
+    </div>
+    <div class="stat">
+      <div class="stat-num">99%</div>
+      <div class="stat-label">Satisfaction</div>
+    </div>
+  </div>
+</section>
+
+<!-- WHY CHOOSE -->
+<section id="why">
+  <div class="section-label">Why Apex Fitness</div>
+  <h2 class="section-title">BUILT FOR<br><span class="accent">CHAMPIONS</span></h2>
+  <div class="divider"></div>
+  <div class="why-grid fade-up">
+    <div class="why-item">
+      <div class="why-icon">⚡</div>
+      <div class="why-title">24 / 7 Access</div>
+      <p class="why-desc">Train on your schedule. Our facilities are open around the clock — because peak performance doesn't follow a 9-to-5.</p>
+    </div>
+    <div class="why-item">
+      <div class="why-icon">🏆</div>
+      <div class="why-title">Elite Trainers</div>
+      <p class="why-desc">Our coaches are certified professionals with competitive athletics backgrounds. Every session is precision-programmed for your goals.</p>
+    </div>
+    <div class="why-item">
+      <div class="why-icon">🔩</div>
+      <div class="why-title">Premium Equipment</div>
+      <p class="why-desc">Over $2M in cutting-edge equipment. From Olympic lifting platforms to AI-assisted cardio systems — the best tools available.</p>
+    </div>
+    <div class="why-item">
+      <div class="why-icon">🔥</div>
+      <div class="why-title">Real Community</div>
+      <p class="why-desc">Join a culture of accountability. Monthly challenges, transformation contests, and a tribe that celebrates every victory.</p>
+    </div>
+    <div class="why-item">
+      <div class="why-icon">📱</div>
+      <div class="why-title">Member App</div>
+      <p class="why-desc">Book classes, track workouts, message your coach, and monitor your transformation journey — all from your smartphone.</p>
+    </div>
+    <div class="why-item">
+      <div class="why-icon">🥗</div>
+      <div class="why-title">Nutrition Coaching</div>
+      <p class="why-desc">Fuel your training with expert nutritional guidance. Personalized meal plans and macro tracking included in premium tiers.</p>
+    </div>
+  </div>
+</section>
+
+<!-- FACILITIES -->
+<section id="facilities">
+  <div class="facilities-header">
+    <div>
+      <div class="section-label">The Arena</div>
+      <h2 class="section-title">WORLD-CLASS<br><span class="accent">FACILITIES</span></h2>
+    </div>
+    <a href="#contact" class="btn-outline">Book a Tour →</a>
+  </div>
+  <div class="facilities-scroll">
+    <div class="facility-card">
+      <img src="https://images.unsplash.com/photo-1581009137042-c552e485697a?w=600&q=80" alt="Strength Training">
+      <div class="facility-overlay">
+        <div class="facility-num">01</div>
+        <div class="facility-name">Strength Zone</div>
+        <div class="facility-desc">Olympic platforms, power racks, and full free-weight areas for serious lifters.</div>
+      </div>
+    </div>
+    <div class="facility-card">
+      <img src="https://images.unsplash.com/photo-1571902943202-507ec2618e8f?w=600&q=80" alt="Cardio">
+      <div class="facility-overlay">
+        <div class="facility-num">02</div>
+        <div class="facility-name">Cardio Arena</div>
+        <div class="facility-desc">200+ premium treadmills, rowers, assault bikes, and SkiErgs.</div>
+      </div>
+    </div>
+    <div class="facility-card">
+      <img src="https://images.unsplash.com/photo-1517963879433-6ad2b056d712?w=600&q=80" alt="Functional">
+      <div class="facility-overlay">
+        <div class="facility-num">03</div>
+        <div class="facility-name">Functional Zone</div>
+        <div class="facility-desc">Turf lanes, rigs, sleds, and battle ropes for athletic performance training.</div>
+      </div>
+    </div>
+    <div class="facility-card">
+      <img src="https://images.unsplash.com/photo-1518611012118-696072aa579a?w=600&q=80" alt="Group Classes">
+      <div class="facility-overlay">
+        <div class="facility-num">04</div>
+        <div class="facility-name">Group Studios</div>
+        <div class="facility-desc">Three dedicated studios with pro sound systems for HIIT, Spin, and Yoga.</div>
+      </div>
+    </div>
+    <div class="facility-card">
+      <img src="https://images.unsplash.com/photo-1544161515-4ab6ce6db874?w=600&q=80" alt="Recovery">
+      <div class="facility-overlay">
+        <div class="facility-num">05</div>
+        <div class="facility-name">Recovery Hub</div>
+        <div class="facility-desc">Cryotherapy, infrared saunas, ice baths, and massage therapy.</div>
+      </div>
+    </div>
+    <div class="facility-card">
+      <img src="https://images.unsplash.com/photo-1540497077202-7c8a3999166f?w=600&q=80" alt="Locker Rooms">
+      <div class="facility-overlay">
+        <div class="facility-num">06</div>
+        <div class="facility-name">Premium Locker Rooms</div>
+        <div class="facility-desc">Spa-quality changing facilities with steam rooms and luxury amenities.</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- PROGRAMS -->
+<section id="programs">
+  <div class="section-label">Training Systems</div>
+  <h2 class="section-title fade-up">FIND YOUR<br><span class="accent">PROGRAM</span></h2>
+  <div class="divider"></div>
+  <div class="programs-grid">
+    <div class="program-card fade-up stagger-1">
+      <div class="program-emoji">🔥</div>
+      <div class="program-name">HIIT & Metabolic</div>
+      <p class="program-desc">High-intensity intervals designed to maximize caloric burn and elevate metabolism for 24+ hours post-workout.</p>
+      <span class="program-tag">Beginner → Advanced</span>
+    </div>
+    <div class="program-card fade-up stagger-2">
+      <div class="program-emoji">💪</div>
+      <div class="program-name">Muscle Building</div>
+      <p class="program-desc">Progressive hypertrophy protocols with periodized programming for consistent muscle growth and strength gains.</p>
+      <span class="program-tag">Intermediate</span>
+    </div>
+    <div class="program-card fade-up stagger-3">
+      <div class="program-emoji">🏋️</div>
+      <div class="program-name">Strength & Power</div>
+      <p class="program-desc">Powerlifting and Olympic lifting foundations. Build raw strength through compound movement mastery.</p>
+      <span class="program-tag">Advanced</span>
+    </div>
+    <div class="program-card fade-up stagger-1">
+      <div class="program-emoji">⚖️</div>
+      <div class="program-name">Weight Loss</div>
+      <p class="program-desc">Science-backed fat loss combining metabolic conditioning, resistance training, and nutrition coaching.</p>
+      <span class="program-tag">All Levels</span>
+    </div>
+    <div class="program-card fade-up stagger-2">
+      <div class="program-emoji">🧘</div>
+      <div class="program-name">Yoga & Mobility</div>
+      <p class="program-desc">Flexibility, joint health, and mindfulness practices to enhance performance and prevent injury.</p>
+      <span class="program-tag">All Levels</span>
+    </div>
+    <div class="program-card fade-up stagger-3">
+      <div class="program-emoji">🏃</div>
+      <div class="program-name">Athletic Performance</div>
+      <p class="program-desc">Sport-specific conditioning for athletes. Speed, agility, power, and endurance development.</p>
+      <span class="program-tag">Competitive Athletes</span>
+    </div>
+  </div>
+</section>
+
+<!-- TRAINERS -->
+<section id="trainers">
+  <div class="section-label">The Team</div>
+  <h2 class="section-title fade-up">MEET YOUR<br><span class="accent">COACHES</span></h2>
+  <div class="divider"></div>
+  <div class="trainers-grid">
+    <div class="trainer-card fade-up stagger-1">
+      <div class="trainer-img">
+        <img src="https://images.unsplash.com/photo-1571019614242-c5c5dee9f50b?w=400&q=80" alt="Marcus Chen">
+        <span class="trainer-badge">Head Coach</span>
+      </div>
+      <div class="trainer-info">
+        <div class="trainer-name">Marcus Chen</div>
+        <div class="trainer-spec">Strength & Powerlifting</div>
+        <p class="trainer-bio">Former national champion with 12 years coaching elite athletes. NSCA-CSCS certified, specializing in maximal strength development.</p>
+      </div>
+      <button class="trainer-book">Book Session</button>
+    </div>
+    <div class="trainer-card fade-up stagger-2">
+      <div class="trainer-img">
+        <img src="https://images.unsplash.com/photo-1594381898411-846e7d193883?w=400&q=80" alt="Sofia Reyes">
+        <span class="trainer-badge">Nutrition & PT</span>
+      </div>
+      <div class="trainer-info">
+        <div class="trainer-name">Sofia Reyes</div>
+        <div class="trainer-spec">Body Transformation</div>
+        <p class="trainer-bio">Registered Dietitian and PT with 200+ successful transformations. Combines evidence-based nutrition with smart training protocols.</p>
+      </div>
+      <button class="trainer-book">Book Session</button>
+    </div>
+    <div class="trainer-card fade-up stagger-3">
+      <div class="trainer-img">
+        <img src="https://images.unsplash.com/photo-1567013127542-490d757e51fc?w=400&q=80" alt="James Okafor">
+        <span class="trainer-badge">Athletic Perf.</span>
+      </div>
+      <div class="trainer-info">
+        <div class="trainer-name">James Okafor</div>
+        <div class="trainer-spec">Athletic Performance</div>
+        <p class="trainer-bio">Ex-professional sprinter, speed & agility specialist. Trains professional athletes across football, basketball, and MMA.</p>
+      </div>
+      <button class="trainer-book">Book Session</button>
+    </div>
+    <div class="trainer-card fade-up stagger-4">
+      <div class="trainer-img">
+        <img src="https://images.unsplash.com/photo-1518310383802-640c2de311b2?w=400&q=80" alt="Aisha Patel">
+        <span class="trainer-badge">Wellness</span>
+      </div>
+      <div class="trainer-info">
+        <div class="trainer-name">Aisha Patel</div>
+        <div class="trainer-spec">Yoga & Rehabilitation</div>
+        <p class="trainer-bio">500hr RYT yoga instructor and physical therapist. Specializes in injury rehabilitation, mobility, and mindful movement.</p>
+      </div>
+      <button class="trainer-book">Book Session</button>
+    </div>
+  </div>
+</section>
+
+<!-- SCHEDULE -->
+<section id="schedule">
+  <div class="section-label">This Week</div>
+  <h2 class="section-title fade-up">CLASS<br><span class="accent">SCHEDULE</span></h2>
+  <div class="schedule-tabs">
+    <button class="tab-btn active" onclick="switchTab(this)">Monday</button>
+    <button class="tab-btn" onclick="switchTab(this)">Tuesday</button>
+    <button class="tab-btn" onclick="switchTab(this)">Wednesday</button>
+    <button class="tab-btn" onclick="switchTab(this)">Thursday</button>
+    <button class="tab-btn" onclick="switchTab(this)">Friday</button>
+    <button class="tab-btn" onclick="switchTab(this)">Saturday</button>
+    <button class="tab-btn" onclick="switchTab(this)">Sunday</button>
+  </div>
+  <div style="overflow-x:auto;">
+    <table class="schedule-table">
+      <thead>
+        <tr>
+          <th>Time</th>
+          <th>Class</th>
+          <th>Coach</th>
+          <th>Duration</th>
+          <th>Spots</th>
+          <th></th>
+        </tr>
+      </thead>
+      <tbody id="scheduleBody"></tbody>
+    </table>
+  </div>
+</section>
+
+<!-- MEMBERSHIP -->
+<section id="membership">
+  <div class="section-label">Investment</div>
+  <h2 class="section-title fade-up">MEMBERSHIP<br><span class="accent">PLANS</span></h2>
+  <div class="divider"></div>
+  <p style="color:var(--muted); margin-top:-.5rem; max-width:520px;">No hidden fees. No lock-in contracts on monthly plans. Cancel anytime.</p>
+  <div class="membership-grid">
+    <div class="plan-card fade-up stagger-1">
+      <div class="plan-name">Starter</div>
+      <p style="color:var(--muted); font-size:.85rem;">Perfect for beginners finding their rhythm.</p>
+      <div class="plan-price"><sup>$</sup>49<sub>/mo</sub></div>
+      <div class="plan-period">Billed monthly · Cancel anytime</div>
+      <ul class="plan-features">
+        <li>Full gym access (6am–10pm)</li>
+        <li>2 group classes / week</li>
+        <li>Locker & shower access</li>
+        <li>Member app access</li>
+        <li class="off">Personal training sessions</li>
+        <li class="off">Recovery suite access</li>
+        <li class="off">Nutrition coaching</li>
+      </ul>
+      <button class="btn-outline" style="width:100%;">Get Started</button>
+    </div>
+    <div class="plan-card featured fade-up stagger-2">
+      <span class="plan-badge">Best Value</span>
+      <div class="plan-name">Elite</div>
+      <p style="color:var(--muted); font-size:.85rem;">The complete performance package.</p>
+      <div class="plan-price"><sup>$</sup>129<sub>/mo</sub></div>
+      <div class="plan-period">Billed monthly · Cancel anytime</div>
+      <ul class="plan-features">
+        <li>24/7 gym access</li>
+        <li>Unlimited group classes</li>
+        <li>4 PT sessions / month</li>
+        <li>Recovery suite full access</li>
+        <li>Monthly nutrition check-in</li>
+        <li>Priority class booking</li>
+        <li>Apex app premium tier</li>
+      </ul>
+      <button class="btn-primary" style="width:100%;">Join Elite</button>
+    </div>
+    <div class="plan-card fade-up stagger-3">
+      <div class="plan-name">Champion</div>
+      <p style="color:var(--muted); font-size:.85rem;">For athletes serious about transformation.</p>
+      <div class="plan-price"><sup>$</sup>249<sub>/mo</sub></div>
+      <div class="plan-period">Billed monthly · Cancel anytime</div>
+      <ul class="plan-features">
+        <li>Everything in Elite</li>
+        <li>8 PT sessions / month</li>
+        <li>Full nutrition program</li>
+        <li>Biweekly body composition scans</li>
+        <li>Private training suite access</li>
+        <li>Competition prep support</li>
+        <li>VIP event access</li>
+      </ul>
+      <button class="btn-outline" style="width:100%;">Go Champion</button>
+    </div>
+    <div class="plan-card fade-up stagger-4">
+      <div class="plan-name">Annual</div>
+      <p style="color:var(--muted); font-size:.85rem;">Commit to your goals — save 25%.</p>
+      <div class="plan-price"><sup>$</sup>89<sub>/mo</sub></div>
+      <div class="plan-period">Billed annually ($1,068/yr)</div>
+      <ul class="plan-features">
+        <li>All Elite plan features</li>
+        <li>Save $480 per year</li>
+        <li>Free gym kit (shirt + bag)</li>
+        <li>Free 1-month freeze</li>
+        <li>Locked-in rate guarantee</li>
+        <li>Annual body transformation program</li>
+        <li>Priority customer support</li>
+      </ul>
+      <button class="btn-outline" style="width:100%;">Save 25%</button>
+    </div>
+  </div>
+</section>
+
+<!-- TRANSFORMATIONS -->
+<section id="transformations">
+  <div class="section-label">Real Results</div>
+  <h2 class="section-title fade-up">MEMBER<br><span class="accent">TRANSFORMATIONS</span></h2>
+  <div class="divider"></div>
+  <div class="transform-grid">
+    <div class="transform-card fade-up stagger-1">
+      <div class="transform-photos">
+        <div>
+          <img src="https://images.unsplash.com/photo-1506629082955-511b1aa562c8?w=300&q=80" alt="Before">
+          <span class="transform-label">Before</span>
+        </div>
+        <div>
+          <img src="https://images.unsplash.com/photo-1583454110551-21f2fa2afe61?w=300&q=80" alt="After">
+          <span class="transform-label after">After · 6 Months</span>
+        </div>
+        <div class="transform-divider"></div>
+      </div>
+      <div class="transform-info">
+        <div class="transform-name">Alex Rodriguez</div>
+        <div class="transform-stats">
+          <div class="t-stat"><div class="t-stat-val">−42lbs</div><div class="t-stat-lbl">Weight Lost</div></div>
+          <div class="t-stat"><div class="t-stat-val">+18%</div><div class="t-stat-lbl">Lean Muscle</div></div>
+          <div class="t-stat"><div class="t-stat-val">24wks</div><div class="t-stat-lbl">Duration</div></div>
+        </div>
+        <p class="transform-quote">"Apex changed everything. The coaching, the community — I didn't think a transformation like this was possible for me at 38."</p>
+      </div>
+    </div>
+    <div class="transform-card fade-up stagger-2">
+      <div class="transform-photos">
+        <div>
+          <img src="https://images.unsplash.com/photo-1579758629938-03607ccdbaba?w=300&q=80" alt="Before">
+          <span class="transform-label">Before</span>
+        </div>
+        <div>
+          <img src="https://images.unsplash.com/photo-1583454110551-21f2fa2afe61?w=300&q=80" alt="After">
+          <span class="transform-label after">After · 4 Months</span>
+        </div>
+        <div class="transform-divider"></div>
+      </div>
+      <div class="transform-info">
+        <div class="transform-name">Jordan Kim</div>
+        <div class="transform-stats">
+          <div class="t-stat"><div class="t-stat-val">+28lbs</div><div class="t-stat-lbl">Muscle Gained</div></div>
+          <div class="t-stat"><div class="t-stat-val">2×</div><div class="t-stat-lbl">Strength</div></div>
+          <div class="t-stat"><div class="t-stat-val">16wks</div><div class="t-stat-lbl">Duration</div></div>
+        </div>
+        <p class="transform-quote">"The Champion program is elite-level. Marcus pushed me harder than I've ever been pushed and the results speak for themselves."</p>
+      </div>
+    </div>
+    <div class="transform-card fade-up stagger-3">
+      <div class="transform-photos">
+        <div>
+          <img src="https://images.unsplash.com/photo-1520877880798-5ee004e3f11e?w=300&q=80" alt="Before">
+          <span class="transform-label">Before</span>
+        </div>
+        <div>
+          <img src="https://images.unsplash.com/photo-1549476464-37392f717541?w=300&q=80" alt="After">
+          <span class="transform-label after">After · 8 Months</span>
+        </div>
+        <div class="transform-divider"></div>
+      </div>
+      <div class="transform-info">
+        <div class="transform-name">Priya Nair</div>
+        <div class="transform-stats">
+          <div class="t-stat"><div class="t-stat-val">−55lbs</div><div class="t-stat-lbl">Weight Lost</div></div>
+          <div class="t-stat"><div class="t-stat-val">−22%</div><div class="t-stat-lbl">Body Fat</div></div>
+          <div class="t-stat"><div class="t-stat-val">32wks</div><div class="t-stat-lbl">Duration</div></div>
+        </div>
+        <p class="transform-quote">"Sofia's nutrition guidance combined with the group classes completely transformed my relationship with fitness. Life-changing."</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CALCULATORS -->
+<section id="calculators">
+  <div class="section-label">Smart Tools</div>
+  <h2 class="section-title fade-up">FITNESS<br><span class="accent">CALCULATORS</span></h2>
+  <div class="divider"></div>
+  <div class="calc-grid">
+    <!-- BMI CALC -->
+    <div class="calc-box fade-up stagger-1">
+      <div class="calc-title">BMI Calculator</div>
+      <div class="calc-row">
+        <div class="calc-label">Height (cm)</div>
+        <input class="calc-input" type="number" id="bmiHeight" placeholder="175" min="100" max="250">
+      </div>
+      <div class="calc-row">
+        <div class="calc-label">Weight (kg)</div>
+        <input class="calc-input" type="number" id="bmiWeight" placeholder="70" min="30" max="300">
+      </div>
+      <button class="btn-primary" style="width:100%;margin-top:.5rem;" onclick="calcBMI()">Calculate BMI</button>
+      <div class="calc-result" id="bmiResult" style="display:none;">
+        <div class="calc-result-label">Your BMI</div>
+        <div class="calc-result-val" id="bmiVal">—</div>
+        <div class="calc-result-note" id="bmiNote"></div>
+      </div>
+    </div>
+    <!-- CALORIE CALC -->
+    <div class="calc-box fade-up stagger-2">
+      <div class="calc-title">Daily Calorie Needs</div>
+      <div class="calc-row">
+        <div class="calc-label">Age</div>
+        <input class="calc-input" type="number" id="calAge" placeholder="30" min="15" max="90">
+      </div>
+      <div class="calc-row">
+        <div class="calc-label">Weight (kg)</div>
+        <input class="calc-input" type="number" id="calWeight" placeholder="70" min="30" max="300">
+      </div>
+      <div class="calc-row">
+        <div class="calc-label">Height (cm)</div>
+        <input class="calc-input" type="number" id="calHeight" placeholder="175" min="100" max="250">
+      </div>
+      <div class="calc-row">
+        <div class="calc-label">Activity Level</div>
+        <select class="calc-select" id="calActivity">
+          <option value="1.2">Sedentary (office job)</option>
+          <option value="1.375">Light (1-3 days/week)</option>
+          <option value="1.55" selected>Moderate (3-5 days/week)</option>
+          <option value="1.725">Active (6-7 days/week)</option>
+          <option value="1.9">Very Active (athlete)</option>
+        </select>
+      </div>
+      <div class="calc-row">
+        <div class="calc-label">Sex</div>
+        <select class="calc-select" id="calSex">
+          <option value="male">Male</option>
+          <option value="female">Female</option>
+        </select>
+      </div>
+      <button class="btn-primary" style="width:100%;margin-top:.5rem;" onclick="calcCalories()">Calculate Calories</button>
+      <div class="calc-result" id="calResult" style="display:none;">
+        <div class="calc-result-label">Daily Calories</div>
+        <div class="calc-result-val" id="calVal">—</div>
+        <div class="calc-result-note" id="calNote"></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- TESTIMONIALS -->
+<section id="testimonials">
+  <div class="section-label">Community Voice</div>
+  <h2 class="section-title fade-up">WHAT MEMBERS<br><span class="accent">SAY</span></h2>
+  <div class="testimonials-wrap">
+    <div class="testimonials-track">
+      <div class="testimonial-card fade-up stagger-1">
+        <div class="testimonial-quote">"</div>
+        <div class="testimonial-stars">★★★★★</div>
+        <p class="testimonial-text">I've been to gyms all over the world and Apex is genuinely the best facility I've trained in. The equipment, the staff, the atmosphere — nothing comes close.</p>
+        <div class="testimonial-author">
+          <div class="author-avatar"><img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=100&q=80" alt=""></div>
+          <div><div class="author-name">Daniel Torres</div><div class="author-program">Elite Member · 2 years</div></div>
+        </div>
+      </div>
+      <div class="testimonial-card fade-up stagger-2">
+        <div class="testimonial-quote">"</div>
+        <div class="testimonial-stars">★★★★★</div>
+        <p class="testimonial-text">Sofia's coaching completely changed how I think about food and training. Lost 30 pounds in 5 months and actually enjoyed the process. Worth every penny.</p>
+        <div class="testimonial-author">
+          <div class="author-avatar"><img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=100&q=80" alt=""></div>
+          <div><div class="author-name">Emma Larsson</div><div class="author-program">Champion Member · 18 months</div></div>
+        </div>
+      </div>
+      <div class="testimonial-card fade-up stagger-3">
+        <div class="testimonial-quote">"</div>
+        <div class="testimonial-stars">★★★★★</div>
+        <p class="testimonial-text">The 24/7 access is a game-changer for my schedule. I train at 5am before the family wakes up. Clean, well-maintained, and the app makes booking seamless.</p>
+        <div class="testimonial-author">
+          <div class="author-avatar"><img src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=100&q=80" alt=""></div>
+          <div><div class="author-name">Marcus Webb</div><div class="author-program">Annual Member · 3 years</div></div>
+        </div>
+      </div>
+      <div class="testimonial-card">
+        <div class="testimonial-quote">"</div>
+        <div class="testimonial-stars">★★★★★</div>
+        <p class="testimonial-text">James completely rebuilt my athletic performance after injury. I came back faster and stronger than before. The sports performance program here is elite-level.</p>
+        <div class="testimonial-author">
+          <div class="author-avatar"><img src="https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?w=100&q=80" alt=""></div>
+          <div><div class="author-name">Ryan Osei</div><div class="author-program">Champion Member · 1 year</div></div>
+        </div>
+      </div>
+      <div class="testimonial-card">
+        <div class="testimonial-quote">"</div>
+        <div class="testimonial-stars">★★★★★</div>
+        <p class="testimonial-text">Aisha's yoga classes transformed my recovery game. I used to feel beat up after heavy training weeks. Now I feel better than ever. She's an incredible teacher.</p>
+        <div class="testimonial-author">
+          <div class="author-avatar"><img src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=100&q=80" alt=""></div>
+          <div><div class="author-name">Chloe Park</div><div class="author-program">Elite Member · 8 months</div></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- BLOG -->
+<section id="blog">
+  <div class="section-label">Knowledge Hub</div>
+  <h2 class="section-title fade-up">FITNESS<br><span class="accent">INTEL</span></h2>
+  <div class="divider"></div>
+  <div class="blog-grid">
+    <div class="blog-card fade-up stagger-1">
+      <div class="blog-img">
+        <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=400&q=80" alt="Training">
+      </div>
+      <div class="blog-body">
+        <div class="blog-cat">Training Science</div>
+        <div class="blog-title">Progressive Overload: The One Variable That Guarantees Growth</div>
+        <p class="blog-excerpt">Master the art of incremental progress to break through plateaus and build lasting strength.</p>
+        <div class="blog-meta"><span>Marcus Chen</span><span>5 min read</span></div>
+      </div>
+    </div>
+    <div class="blog-card fade-up stagger-2">
+      <div class="blog-img">
+        <img src="https://images.unsplash.com/photo-1490645935967-10de6ba17061?w=400&q=80" alt="Nutrition">
+      </div>
+      <div class="blog-body">
+        <div class="blog-cat">Nutrition</div>
+        <div class="blog-title">The Truth About Protein: How Much You Actually Need</div>
+        <p class="blog-excerpt">Science-backed protein targets for muscle building, fat loss, and performance — without the bro-science myths.</p>
+        <div class="blog-meta"><span>Sofia Reyes RD</span><span>6 min read</span></div>
+      </div>
+    </div>
+    <div class="blog-card fade-up stagger-3">
+      <div class="blog-img">
+        <img src="https://images.unsplash.com/photo-1544161515-4ab6ce6db874?w=400&q=80" alt="Recovery">
+      </div>
+      <div class="blog-body">
+        <div class="blog-cat">Recovery</div>
+        <div class="blog-title">Why Sleep Is Your Most Powerful Performance Drug</div>
+        <p class="blog-excerpt">The hormonal and physiological case for making sleep the cornerstone of your training program.</p>
+        <div class="blog-meta"><span>Dr. Aisha Patel</span><span>7 min read</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FAQ -->
+<section id="faq">
+  <div class="section-label">Got Questions</div>
+  <h2 class="section-title fade-up">FREQUENTLY<br><span class="accent">ASKED</span></h2>
+  <div class="faq-wrap">
+    <div class="faq-item">
+      <div class="faq-q" onclick="toggleFaq(this)">
+        Can I cancel my membership at any time?
+        <span class="faq-icon">+</span>
+      </div>
+      <div class="faq-a">Monthly memberships can be cancelled with 30 days notice — no cancellation fees ever. Annual memberships are pre-paid but include a 1-month freeze benefit per year.</div>
+    </div>
+    <div class="faq-item">
+      <div class="faq-q" onclick="toggleFaq(this)">
+        What are your opening hours?
+        <span class="faq-icon">+</span>
+      </div>
+      <div class="faq-a">Elite and Champion members enjoy 24/7 access. Starter members can access the gym from 6:00 AM to 10:00 PM daily. Staffed hours are 7:00 AM – 9:00 PM weekdays, 8:00 AM – 6:00 PM weekends.</div>
+    </div>
+    <div class="faq-item">
+      <div class="faq-q" onclick="toggleFaq(this)">
+        How do I book a class or training session?
+        <span class="faq-icon">+</span>
+      </div>
+      <div class="faq-a">Classes can be booked via our member app (iOS & Android) or through the schedule on this website. Personal training sessions can be booked directly with your coach through the app.</div>
+    </div>
+    <div class="faq-item">
+      <div class="faq-q" onclick="toggleFaq(this)">
+        Is there a free trial available?
+        <span class="faq-icon">+</span>
+      </div>
+      <div class="faq-a">Yes! We offer a 7-day free trial that includes full gym access, two complimentary group classes, and a fitness assessment with one of our coaches. No credit card required to start.</div>
+    </div>
+    <div class="faq-item">
+      <div class="faq-q" onclick="toggleFaq(this)">
+        Do you offer corporate or student discounts?
+        <span class="faq-icon">+</span>
+      </div>
+      <div class="faq-a">We offer 15% corporate rates for companies with 10+ employees and 20% student discounts with valid ID. Contact us directly to set up a corporate account or verify student eligibility.</div>
+    </div>
+    <div class="faq-item">
+      <div class="faq-q" onclick="toggleFaq(this)">
+        What equipment does the gym have?
+        <span class="faq-icon">+</span>
+      </div>
+      <div class="faq-a">Our facility features 200+ cardio machines, full Olympic lifting platforms, extensive free weights (up to 200lbs), cable systems, functional training rigs, and a dedicated rehabilitation area. All equipment is replaced on a 5-year cycle.</div>
+    </div>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<div id="contact">
+  <div class="contact-left">
+    <div class="section-label">Get In Touch</div>
+    <h2 class="section-title">VISIT<br><span class="accent">US</span></h2>
+    <div class="contact-info">
+      <div class="contact-item">
+        <div class="contact-ico">📍</div>
+        <div>
+          <div class="contact-detail-label">Location</div>
+          <div class="contact-detail-val">2400 Apex Boulevard, Downtown District<br>New York, NY 10001</div>
+        </div>
+      </div>
+      <div class="contact-item">
+        <div class="contact-ico">📞</div>
+        <div>
+          <div class="contact-detail-label">Phone</div>
+          <div class="contact-detail-val">+1 (212) 555-APEX</div>
+        </div>
+      </div>
+      <div class="contact-item">
+        <div class="contact-ico">✉️</div>
+        <div>
+          <div class="contact-detail-label">Email</div>
+          <div class="contact-detail-val">hello@apexfitness.com</div>
+        </div>
+      </div>
+      <div class="contact-item">
+        <div class="contact-ico">🕐</div>
+        <div>
+          <div class="contact-detail-label">Staffed Hours</div>
+          <div class="contact-detail-val">Mon–Fri: 7am – 9pm<br>Sat–Sun: 8am – 6pm</div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="contact-right">
+    <div class="section-label">Free Trial</div>
+    <h2 class="section-title">START<br><span class="accent">TODAY</span></h2>
+    <div class="contact-form">
+      <div class="form-group">
+        <label class="form-label">Full Name</label>
+        <input class="form-input" type="text" placeholder="Alex Rodriguez">
+      </div>
+      <div class="form-group">
+        <label class="form-label">Email Address</label>
+        <input class="form-input" type="email" placeholder="alex@example.com">
+      </div>
+      <div class="form-group">
+        <label class="form-label">Phone</label>
+        <input class="form-input" type="tel" placeholder="+1 (555) 000-0000">
+      </div>
+      <div class="form-group">
+        <label class="form-label">Your Primary Goal</label>
+        <select class="form-input" style="cursor:pointer;">
+          <option value="">Select your goal...</option>
+          <option>Lose weight & tone up</option>
+          <option>Build muscle mass</option>
+          <option>Improve athletic performance</option>
+          <option>General fitness & health</option>
+          <option>Injury rehabilitation</option>
+        </select>
+      </div>
+      <div class="form-group">
+        <label class="form-label">Message (optional)</label>
+        <textarea class="form-input" placeholder="Tell us a bit about yourself..."></textarea>
+      </div>
+      <button class="btn-primary" style="width:100%; padding:1.1rem; font-size:.9rem;" onclick="handleFormSubmit(this)">Claim My Free 7-Day Trial →</button>
+      <p style="font-size:.75rem; color:var(--muted); text-align:center;">No credit card required. No commitment.</p>
+    </div>
+  </div>
+</div>
+
+<!-- CTA BANNER -->
+<div id="cta-banner">
+  <div class="section-label">Limited Offer</div>
+  <h2 class="section-title">FIRST MONTH<br><span class="accent">FREE</span></h2>
+  <p style="color:rgba(8,8,8,.6); margin-top:1rem; font-size:.95rem;">New members only. Offer ends March 31st. Join the 12,000+ who already train at Apex.</p>
+  <button class="btn-dark" onclick="document.getElementById('contact').scrollIntoView({behavior:'smooth'})">Claim Your Free Month →</button>
+</div>
+
+<!-- FOOTER -->
+<footer>
+  <div class="footer-grid">
+    <div class="footer-brand">
+      <div class="footer-logo">APEX<span>FIT</span></div>
+      <p class="footer-about">Where champions are made. Elite training facilities, world-class coaching, and a community that transforms lives — since 2015.</p>
+      <div class="footer-socials">
+        <button class="social-btn">𝕏</button>
+        <button class="social-btn">in</button>
+        <button class="social-btn">📸</button>
+        <button class="social-btn">▶</button>
+      </div>
+    </div>
+    <div>
+      <div class="footer-col-title">Quick Links</div>
+      <ul class="footer-links">
+        <li><a href="#why">About Us</a></li>
+        <li><a href="#facilities">Facilities</a></li>
+        <li><a href="#programs">Programs</a></li>
+        <li><a href="#trainers">Our Trainers</a></li>
+        <li><a href="#schedule">Class Schedule</a></li>
+      </ul>
+    </div>
+    <div>
+      <div class="footer-col-title">Membership</div>
+      <ul class="footer-links">
+        <li><a href="#membership">Pricing Plans</a></li>
+        <li><a href="#contact">Free Trial</a></li>
+        <li><a href="#faq">FAQ</a></li>
+        <li><a href="#">Corporate Rates</a></li>
+        <li><a href="#">Student Discount</a></li>
+      </ul>
+    </div>
+    <div>
+      <div class="footer-col-title">Resources</div>
+      <ul class="footer-links">
+        <li><a href="#blog">Blog</a></li>
+        <li><a href="#calculators">Fitness Calculators</a></li>
+        <li><a href="#transformations">Transformations</a></li>
+        <li><a href="#">Member App</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <span>© 2025 APEX FITNESS. All rights reserved.</span>
+    <div style="display:flex;gap:2rem;">
+      <a href="#">Privacy Policy</a>
+      <a href="#">Terms of Service</a>
+      <a href="#">Cookie Policy</a>
+    </div>
+  </div>
+</footer>
+
+<!-- STICKY CTA -->
+<div class="sticky-cta">
+  <button class="sticky-btn" onclick="document.getElementById('contact').scrollIntoView({behavior:'smooth'})">Join Now — Free Trial</button>
+<a href="https://wa.me/923703542316?text=Hello%20I%20want%20to%20know%20about%20your%20services" target="_blank">
+  <button class="sticky-wa">💬</button>
+</a></div>
+
+<script src="script.js"></script>
+</body>
+</html>
